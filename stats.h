@@ -83,7 +83,7 @@ unsigned int find_mean(unsigned char * arr, unsigned int size);
  * @brief Finds the maximum of an array
  *
  * Given a pointer to an array and its size,
- * returns the maximum value of the array data.
+ * returns the index to the maximum value of the array data.
  *
  * @param ptr Pointer to data array
  * @param size Size of the array
@@ -97,7 +97,7 @@ int find_maximum(unsigned char * arr, unsigned int size);
  * @brief Finds the minimum of an array
  *
  * Given a pointer to an array and its size,
- * returns the minimum value of the array data.
+ * returns the index to the minimum value of the array data.
  *
  * @param ptr Pointer to data array
  * @param size Size of the array
@@ -111,7 +111,7 @@ int find_minimum(unsigned char * arr, unsigned int size);
  * @brief Sorts an array
  *
  * Given an pointer to an array and its size, sorts
- * the array from largest to smallest.
+ * the array from largest to smallest using the Bubble Sort method.
  *
  * @param ptr Pointer to data array
  * @param size Size of the array
