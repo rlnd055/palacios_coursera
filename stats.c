@@ -55,7 +55,8 @@ void print_statistics(unsigned char * arr, unsigned int size){
 
 void print_array(unsigned char * arr, unsigned int size){
   int col = 0;
-  for (int i = 0; i < size; i++){
+  int i = 0;
+  for (i = 0; i < size; i++){
   	printf("%2d:%4d ", i, arr[i]);
   	col++;
   	if (col == COLS ){
@@ -79,7 +80,8 @@ unsigned char find_median(unsigned char * arr, unsigned int size){
 
 unsigned int find_mean(unsigned char * arr, unsigned int size){
   unsigned int sum = 0;
-  for (int i = 0; i < size; i++){
+  int i = 0;
+  for (i = 0; i < size; i++){
   	sum += *(arr + i);
   }
   return sum / size;
@@ -113,7 +115,8 @@ void sort_array(unsigned char * arr, unsigned int size){
   /* Bubble sort */
   unsigned char max;
   int imax;
-  for (int i = 0; i < size - 1; i++){
+  int i = 0;
+  for (i = 0; i < size - 1; i++){
   	imax = find_maximum(arr + i, size - i) + i;/* The sub-array passed as argument has index values off-set by i */
   	if (i != imax){
   	  max = arr[imax];
