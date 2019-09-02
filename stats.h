@@ -77,7 +77,7 @@ unsigned char find_median(unsigned char * arr, unsigned int size);
  * @return unsigned char
  */
 
-unsigned char find_mean(unsigned char * arr, unsigned int size);
+unsigned int find_mean(unsigned char * arr, unsigned int size);
 
 /**
  * @brief Finds the maximum of an array
@@ -88,10 +88,10 @@ unsigned char find_mean(unsigned char * arr, unsigned int size);
  * @param ptr Pointer to data array
  * @param size Size of the array
  *
- * @return unsigned char
+ * @return int
  */
 
-unsigned char find_maximum(unsigned char * arr, unsigned int size);
+int find_maximum(unsigned char * arr, unsigned int size);
 
 /**
  * @brief Finds the minimum of an array
@@ -102,10 +102,10 @@ unsigned char find_maximum(unsigned char * arr, unsigned int size);
  * @param ptr Pointer to data array
  * @param size Size of the array
  *
- * @return unsigned char
+ * @return int
  */
 
-unsigned char find_minimum(unsigned char * arr, unsigned int size);
+int find_minimum(unsigned char * arr, unsigned int size);
 
 /**
  * @brief Sorts an array
@@ -122,3 +122,4 @@ unsigned char find_minimum(unsigned char * arr, unsigned int size);
 void sort_array(unsigned char * arr, unsigned int size);
 
 #endif /* __STATS_H__ */
+
